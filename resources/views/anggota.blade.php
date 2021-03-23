@@ -26,12 +26,11 @@
     <th>jenis_kelamin</th>
     <th>no_tlp</th>
     <th>alamat</th>
-    <th>aksi</th>
   </tr>
   <tr>
     @foreach ($blog as $b)
     <tr>
-      <td>{{ $b-> id_anggota}}</td>
+      <td>{{ $b-> id}}</td>
       <td>{{ $b-> nama_anggota }}</td>
       <td>{{ $b-> jenis_kelamin }}</td>
       <td>{{ $b-> no_tlp }}</td>

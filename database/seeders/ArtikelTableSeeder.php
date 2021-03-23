@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use DB;
 class ArtikelTableSeeder extends Seeder
 {
     /**
@@ -20,7 +20,6 @@ class ArtikelTableSeeder extends Seeder
                 'judul' => 'Belajar Model Dengan Laravel',
                 'slug' => ' belajar-model-dengan-laravel',
                 'isi' =>'1',
-                
                 'penulis' =>"abababba"
             ],
             [
@@ -28,7 +27,6 @@ class ArtikelTableSeeder extends Seeder
                 'judul' => 'Belajar baca',
                 'slug' => ' belajar-baca dengan mudah',
                 'isi' =>'1',
-                
                 'penulis' =>"abababba"
             ],
             [

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArtikelsTable extends Migration
+class CreatePegawaisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateArtikelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('artikels', function (Blueprint $table) {
+        Schema::create('pegawais', function (Blueprint $table) {
             $table->id();
-            $table->string('judul',255)->index();
-            $table->string('slug',255)->index();
-            $table->string('isi')->nullable();
-            $table->string('penulis',50)->nullable();
+            $table->string('nama_anggota')->index();
+            $table->string('jenis_kelamin')->index();
+            $table->string('no_tlp')->index();
+            $table->string('alamat')->index();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateArtikelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artikels');
+        Schema::dropIfExists('pegawais');
     }
 }

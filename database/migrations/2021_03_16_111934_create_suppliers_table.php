@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArtikelsTable extends Migration
+class CreateSuppliersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateArtikelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('artikels', function (Blueprint $table) {
+        Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
-            $table->string('judul',255)->index();
-            $table->string('slug',255)->index();
-            $table->string('isi')->nullable();
-            $table->string('penulis',50)->nullable();
+            $table->string('nama_supplier')->index();
+            $table->string('jenis')->index();
+            $table->string('kontrak')->index();
+            $table->string('biaya')->index();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateArtikelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artikels');
+        Schema::dropIfExists('suppliers');
     }
 }

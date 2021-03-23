@@ -13,10 +13,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        //Model::unguard();
-        $this->call(ArtikelTableSeeder::class);
-        //Model::reguard();
+
+        // $this->call(ArtikelTableSeeder::class);
+        $this->call(AngotasTableSeeder::class);
+        $this->call(PegawaiTableSeeder::class);
+        $this->call(pelangganTableSeeder::class);
+        $this->call(SupplierTableSeeder::class);
+
+
 
     }
 }

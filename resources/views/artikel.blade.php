@@ -3,7 +3,7 @@
 @section('content')
      <!--Main content-->
  <section class="container margin-bottom-50"> 
-         
+           
     <div class="about-container">
     
 

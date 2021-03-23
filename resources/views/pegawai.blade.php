@@ -21,21 +21,20 @@
 
 <table style="width:100%">
   <tr>
-    <th>id_pelangan</th>
-    <th>nama_pelangan</th>
-    <th>alamat</th>
+    <th>id_pegawai</th>
+    <th>nama_pegawai</th>
+    <th>jenis_kelamin</th>
     <th>no_tlp</th>
-    <th>email</th>
-    <th>aksi</th>
+    <th>alamat</th>
   </tr>
   <tr>
     @foreach ($blog as $b)
     <tr>
       <td>{{ $b-> id}}</td>
-      <td>{{ $b-> nama_pelangan }}</td>
-      <td>{{ $b-> alamat }}</td>
+      <td>{{ $b-> nama_anggota }}</td>
+      <td>{{ $b-> jenis_kelamin }}</td>
       <td>{{ $b-> no_tlp }}</td>
-      <td>{{ $b-> email }}</td>
+      <td>{{ $b-> alamat }}</td>
     </tr> 
     @endforeach
    

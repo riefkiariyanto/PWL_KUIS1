@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\SupplierController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +27,5 @@ route::get('/',[HomeController::class,'index']);
 route::get('/artikel',[ArtikelController::class, 'index']);
 route::get('/pelanggan',[PelangganController::class, 'index']);
 route::get('/anggota',[AnggotaController::class, 'index']);
-
+route::get('/pegawai',[PegawaiController::class, 'index']);
+route::get('/supplier',[SupplierController::class, 'index']);
